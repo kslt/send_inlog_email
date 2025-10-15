@@ -13,10 +13,15 @@
   <form action="/send" method="POST">
     <label>Förnamn:</label><br>
     <input type="text" name="firstname" required><br>
+
     <label>E-postadress:</label><br>
     <input type="email" name="email" required><br>
+
+    <label>Lösenord (valfritt):</label><br>
+    <input type="text" name="password" placeholder="Lämna tomt för att generera"><br>
+
     <label><input type="checkbox" name="includePdf" value="true"> Bifoga PDF</label><br>
-    <button type="submit">Skicka</button>
-  </form>
+  <button type="submit">Skicka</button>
+</form>
 </body>
 </html>

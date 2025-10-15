@@ -17,7 +17,10 @@ app.get("/", (req, res) => {
 
 app.post("/send", async (req, res) => {
   const { firstname, email, includePdf } = req.body;
-  const password = Math.random().toString(36).slice(-8);
+  const password = req.body.password && req.body.password.trim() !== "" 
+  ? req.body.password.trim() 
+  : Math.random().toString(36).slice(-8);
+  //const password = Math.random().toString(36).slice(-8);
 
   const template = fs.readFileSync("./views/email_template.html", "utf8");
   const html = template
