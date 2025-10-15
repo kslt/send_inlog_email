@@ -59,5 +59,5 @@ app.post("/send", async (req, res) => {
 });
 
 app.listen(3000, () =>
-  console.log("Server igång på http://localhost:3000")
+  console.log("Server igång på http://localhost:3012")
 );
