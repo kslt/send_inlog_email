@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <title>Skicka lösenord</title>
+  <style>
+    body { font-family: sans-serif; margin: 2rem; }
+    input, button { padding: 8px; margin: 6px 0; width: 300px; }
+  </style>
+</head>
+<body>
+  <h1>Skicka lösenord</h1>
+  <form action="/send" method="POST">
+    <label>Förnamn:</label><br>
+    <input type="text" name="firstname" required><br>
+    <label>E-postadress:</label><br>
+    <input type="email" name="email" required><br>
+    <label><input type="checkbox" name="includePdf" value="true"> Bifoga PDF</label><br>
+    <button type="submit">Skicka</button>
+  </form>
+</body>
+</html>

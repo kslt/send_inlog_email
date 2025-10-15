@@ -1,0 +1,13 @@
+{
+  "name": "password-mailer",
+  "version": "1.0.0",
+  "main": "server.js",
+  "type": "module",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "nodemailer": "^6.9.1",
+    "pdfkit": "^0.14.0",
+    "body-parser": "^1.20.2"
+  }
+}
